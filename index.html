@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,26 +25,62 @@
         <section id="home">
             <img id="imagem-flutuante" class="imagem-redonda" src="img/photo.jpeg" alt="minha foto">
             <h1>Olá, eu sou Kayky Gonçalves</h1>
-            <p>Desenvolvedor Front-End apaixonado por criar experiências web incríveis.</p>
+            <p><span class="destaque"><strong>Desenvolvedor Front-End</strong></span> apaixonado por criar experiências web incríveis.</p>
         </section>
 
         <section id="about">
             <h2>Sobre Mim</h2>
             <p>Cursando o 5º semestre de Análise e Desenvolvimento de Sistemas e atuando como estagiário no </p>
-                <p><storng>Eniac Academy</storng>, onde participo do desenvolvimento de projetos reais para clientes.</p> 
+                <p><strong>Eniac Academy</strong>, onde participo do desenvolvimento de projetos reais para clientes.</p> 
                 <p>Sou um profissional curioso e autodidata, com experiência prévia em <strong>Suporte Técnico</strong>, o que me</p> 
                 <p>proporcionou uma base sólida em resolução de problemas e infraestrutura. Hoje, meu foco é aplicar </p>
                 <p>essa bagagem na criação de soluções web eficientes e criativas.</p>
         </section>
 
-        <section id="projects">
-            <h2>Meus Projetos</h2>
-            <div class="project-card">
-                <h3>Projeto IPJD - Website para uma igreja</h3>
-                <p>Esse foi meu primeiro projeto, onde estava começando a testar as linguagens. Foi utilizado HTML, CSS e Js para o front e javascript + MySQL para o banco de dados.</p>
-                <img class="projetos" src="img/projeto1.png">
+<section id="projects">
+    <h2>Meus Projetos</h2>
+
+    <div id="carouselProjetos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselProjetos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/projeto1.png" class="d-block w-100" alt="Website para uma igreja">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Projeto IPJD</h5>
+                    <p>Website para uma igreja, utilizando HTML, CSS e JavaScript.</p>
+                </div>
             </div>
-            </section>
+
+            <div class="carousel-item">
+                <img src="img/projeto2.png" class="d-block w-100" alt="Imagem do Projeto 2"> <div class="carousel-caption d-none d-md-block">
+                    <h5>Projeto 2</h5>
+                    <p>Descrição do seu segundo projeto.</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/projeto3.png" class="d-block w-100" alt="Imagem do Projeto 3"> <div class="carousel-caption d-none d-md-block">
+                    <h5>Projeto 3</h5>
+                    <p>Descrição do seu terceiro projeto.</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjetos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjetos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
         <section id="contact">
             <h2>Contato</h2>
