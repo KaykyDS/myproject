@@ -1,6 +1,8 @@
 #  projeto desafio -> portfólio
 
 > Uma breve descrição sobre o meu projeto:
+> Projeto desenvolvido para portfólio pessoal, com informações sobre meus projetos pessoais, área de atuação
+> utilizadas. Criado com o intuito de ir atualizando conforme minha evolução nas linguagens.
 
 ## 🚀 Tecnologias
 
@@ -16,21 +18,17 @@ Siga os passos abaixo para rodar o projeto em sua máquina.
 
 **Pré-requisitos**
 
-- acesso a alguma ide
+- Visual Studio Code
 
 **Instalação**
 
 ```bash
 # Clone este repositório
 $ git clone [https://github.com/KaykyDS/myproject.git ](https://github.com/KaykyDS/myproject.git )
+o usuário clonar o repositório e abrir o arquivo index.html no navegador, ou usar a extensão "Live Server"
+do VS Code, que parece ser o que você usou (porta 5500).
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd myproject
 
-# Instale as dependências
-$ npm install
-
-# O servidor iniciará na porta:5500- acesse http://localhost:5500
 📄 Licença
 Este projeto está sob a licença MIT.
 
