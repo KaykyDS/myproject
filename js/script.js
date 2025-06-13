@@ -9,6 +9,46 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Adicione este código ao seu arquivo script.js
+
+// --- LÓGICA DO MODO ESCURO ---
+
+document.addEventListener('DOMContentLoaded', () => {
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  // Função para aplicar o tema salvo
+  const applyTheme = (theme) => {
+      if (theme === 'dark') {
+          body.classList.add('dark-mode');
+          darkModeToggle.textContent = '☀️'; // Ícone de sol
+      } else {
+          body.classList.remove('dark-mode');
+          darkModeToggle.textContent = '🌙'; // Ícone de lua
+      }
+  };
+
+  // Verifica se há um tema salvo no localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+      applyTheme(savedTheme);
+  }
+
+  // Adiciona o evento de clique ao botão
+  darkModeToggle.addEventListener('click', () => {
+      let newTheme;
+      if (body.classList.contains('dark-mode')) {
+          newTheme = 'light';
+      } else {
+          newTheme = 'dark';
+      }
+      
+      // Salva a nova preferência e aplica o tema
+      localStorage.setItem('theme', newTheme);
+      applyTheme(newTheme);
+  });
+});
+
 // // Aguarda o conteúdo da página carregar completamente
 // document.addEventListener('DOMContentLoaded', () => {
 
